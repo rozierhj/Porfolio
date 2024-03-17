@@ -2,33 +2,88 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Header ribbon an menu styles */
 header{
-    display: flex;
-    align-items: center;
-    height: 200px;
+    height: 300px;
     width: 100%;
-    background-color: navy;
+    background-image: url(../images/mattComputerScreen.png);
+    position: relative;
 }
-
+/* Header Ribbon */
 h1{
     white-space: nowrap;
     background-color: lightblue;
     padding: 5px 10px 5px 50px;
 }
+.top-bar{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: navy;
+    align-items: center;
+}
+/* Header navigation bar */
 .menu{
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-right: 10px;
+    margin-top: 50px;
 }
-.menu-options{
+.menu li{
     
+    font-weight: bold;
     display: inline;
     color: white;
     text-decoration: underline;
     padding-left: 5px;
     padding-right: 5px;
 }
-
-
-
+.subtitle{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    height: 60px;
+    width: 250px;
+    background-color: aquamarine;
+}
+.grid-photos{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: 2;
+    background-color: lightgreen;
+    /* padding: 10px; */
+}
+.grid-top{
+    grid-column: 1 / span 2;
+    background-color: bisque;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 30px;
+    background-image: url(../images/computer.png);
+}
+.grid-photo-2{
+    background-color: bisque;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 30px;
+    
+}
+.grid-photo-3{
+    background-color: bisque;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 30px;
+}
+.grid-photo-4{
+    background-color: bisque;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 30px;
+}
+.grid-photo-5{
+    background-color: bisque;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 30px;
+}
