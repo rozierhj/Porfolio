@@ -2,8 +2,16 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root{
+    --project-height: 300px; 
+    --gradient: 0.5; 
+}
 /* Header ribbon an menu styles */
 header{
+    background-image: url(/assets/images/computerString.png);
+    background-size: cover;
+    background-position: center;
     height: 300px;
     width: 100%;
     background-repeat: no-repeat;
@@ -47,7 +55,6 @@ header h1{
     width: 250px;
     background-color: aquamarine;
 }
-
 /* Main Body */
 
 /* My Inormation */
@@ -63,7 +70,7 @@ header h1{
 .work{
     display: flex;
     flex-direction: row;
-    height: 800px;
+    /* height: 800px; */
     border: 5px solid grey;
 }
 .title{
@@ -80,39 +87,45 @@ header h1{
 .work-links{
     width: 80%;
     display: grid;
-    background-color: pink;
+    padding: 20px;
+    gap: 20px;
     border: 5px solid black;
 }
-
-
 .main-project{
-    background-color: purple;
+    height: 600px;;
+    background-image: url(/assets/images/mainProject.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
     grid-column: 1/ span 2;
     grid-row: 1;
 }
-.project-1{
+.project-images{
+    height: var(--project-height);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+}
+.project-1{ 
+    background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/javascriptCode.png);
     grid-row: 2;
     grid-column: 1;
-    background-color: pink;
-    border: 5px solid black;
 }
 .project-2{
+    background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/mattComputerScreen.png);
     grid-row: 2;
     grid-column: 2;
-    background-color: pink;
-    border: 5px solid black; 
 }
 .project-3{
+    background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/background.png);
     grid-row: 3;
     grid-column: 1;
-    background-color: pink;
-    border: 5px solid black;
 }
 .project-4{
+    background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/computerScreens.png);
     grid-row: 3;
     grid-column: 2;
-    background-color: pink;
-    border: 5px solid black;
 }
 
 /* Footer */
@@ -165,39 +178,32 @@ footer{
 } 
 .work-links{
     width: 100%;
-    height: 1000px;
     display: grid;
-    background-color: pink;
     border: 5px solid black;
 }
 .main-project{
-    background-color: purple;
+    height: 300px;
     grid-column: 1;
     grid-row: 1;
 }
 .project-1{
+    height: var(--project-height);
     grid-row: 2;
-    grid-column: 1;
-    background-color: pink;
-    border: 5px solid black;
-}
+    grid-column: 1;}
 .project-2{
+    height: var(--project-height);
     grid-row: 3;
     grid-column: 1;
-    background-color: pink;
-    border: 5px solid black; 
 }
 .project-3{
+    height: var(--project-height);
     grid-row: 4;
     grid-column: 1;
-    background-color: pink;
-    border: 5px solid black;
 }
 .project-4{
+    height: var(--project-height);
     grid-row: 5;
     grid-column: 1;
-    background-color: pink;
-    border: 5px solid black;
 }
 
 }
