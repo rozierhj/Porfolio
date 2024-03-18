@@ -7,6 +7,9 @@
     --project-height: 300px; 
     --gradient: 0.5; 
 }
+p{
+    padding: 5px;
+}
 /* Header ribbon an menu styles */
 header{
     background-image: url(/assets/images/computerString.png);
@@ -16,6 +19,7 @@ header{
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
+    margin-bottom: 20px;
 }
 /* Header Ribbon */
 header h1{
@@ -62,26 +66,29 @@ header h1{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 300px;
-    border: 5px solid black;
+    height: 200px;
 }
 
 /* My Work */
 .work{
     display: flex;
     flex-direction: row;
-    /* height: 800px; */
-    border: 5px solid grey;
+    margin-top: 20px;
 }
 .title{
     width: 20%;
-    height: 100%;
-    background-color: aqua;
-    border: 5px solid purple;
+    text-align: right;
+    /* height: 100%; */
+    border-right: 5px solid black;
 }
-.about-text{
-    background-color: yellow;
-    border: 5px solid blue;
+.title h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: navy;
+    margin: 20px;
+    text-align: right;
+}
+#about-text{
     width: 80%;
 }   
 .work-links{
@@ -89,14 +96,14 @@ header h1{
     display: grid;
     padding: 20px;
     gap: 20px;
-    border: 5px solid black;
 }
-.main-project{
-    height: 600px;;
-    background-image: url(/assets/images/mainProject.png);
+#main-project{
+    height: 600px;
+    background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/mainProject.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    border: 3px solid black;
     grid-column: 1/ span 2;
     grid-row: 1;
 }
@@ -107,22 +114,22 @@ header h1{
     background-repeat: no-repeat;
     border: 3px solid black;
 }
-.project-1{ 
+#project-1{ 
     background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/javascriptCode.png);
     grid-row: 2;
     grid-column: 1;
 }
-.project-2{
+#project-2{
     background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/mattComputerScreen.png);
     grid-row: 2;
     grid-column: 2;
 }
-.project-3{
+#project-3{
     background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/background.png);
     grid-row: 3;
     grid-column: 1;
 }
-.project-4{
+#project-4{
     background-image:linear-gradient(rgba(255, 255, 255, var(--gradient)), rgba(255, 255, 255, var(--gradient))), url(/assets/images/computerScreens.png);
     grid-row: 3;
     grid-column: 2;
@@ -130,21 +137,26 @@ header h1{
 
 /* Footer */
 footer{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 100px;
 
 }
 .footer-title{
-    height: 100%;
     width: 20%;
-    background-color: green;
+    border-right: 5px solid black;
 }
-.more-details{
+.footer-title h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: navy;
+    margin: 20px;
+    text-align: right;
+}
+#more-details{
     height: 100%;
     width: 80%;
-    background-color: brown;
-    border: 5px solid black;
 }
 
 
@@ -163,9 +175,7 @@ footer{
     flex-wrap: nowrap;
     border: 5px solid black;
 }
-.about-text{
-    background-color: yellow;
-    border: 5px solid blue;
+#about-text{
     height: 200px;
     width: 100%;
 }  
@@ -181,26 +191,26 @@ footer{
     display: grid;
     border: 5px solid black;
 }
-.main-project{
+#main-project{
     height: 300px;
     grid-column: 1;
     grid-row: 1;
 }
-.project-1{
+#project-1{
     height: var(--project-height);
     grid-row: 2;
     grid-column: 1;}
-.project-2{
+#project-2{
     height: var(--project-height);
     grid-row: 3;
     grid-column: 1;
 }
-.project-3{
+#project-3{
     height: var(--project-height);
     grid-row: 4;
     grid-column: 1;
 }
-.project-4{
+#project-4{
     height: var(--project-height);
     grid-row: 5;
     grid-column: 1;
