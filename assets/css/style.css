@@ -118,6 +118,8 @@ header a, header a:visited {
     padding-right: 10px;
     font-size: 25px;
     color: navy;
+    border: 2px solid navy;
+    margin: 2px;
 }   
 #about-img{
 display: flex;
@@ -310,7 +312,14 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 } 
+.title h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 .work-links{
     width: 100%;
     display: grid;
@@ -338,7 +347,7 @@ header{
 .footer-title{
     width: 20%;
 }
-.title h1, .footer-title h1{
+.about .title h1, .footer-title h1{
     font-size: 24px;
     font-weight: bolder;
     text-align: start;
@@ -346,6 +355,17 @@ header{
     text-align: right;
     margin-right: 10px;
 }   
+.work .title{
+    border: 0;
+    /* font-size: 40px; */
+    width: 100%
+}
+.work h1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 40px;
+}
 #more-details{
     width: 100%;
     justify-content:start;
@@ -367,4 +387,95 @@ ul{
     padding: 0;
 }
 
+}
+@media screen and (max-width: 700px){
+    .about{
+        flex-direction:column;
+        justify-content: start;
+        align-items:start;
+        margin-bottom: 20px;
+    }
+    .about .title, #about-text{
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+        border: 0;
+    }
+    .about .title h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    #about-text{
+        height: 200px;
+    }
+    #about-text p{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    #about-img{
+        display: none;
+    }
+    .animation{
+        display: none;
+    }
+    .menu{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }   
+    .subtitle{
+        padding: 0;
+        right: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .subtitle h1{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .work{
+        margin: 0;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .footer-title{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        border: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #more-details{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #more-details a{
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    #more-details li{
+        margin: 0;
+        padding: 1px;
+    }
 }
