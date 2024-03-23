@@ -287,7 +287,7 @@ footer{
 }
 /* Other screen sizes */
 
-@media screen and (min-width:950px) and (max-width: 1200px){
+@media screen and (min-width:1000px) and (max-width: 1200px){
 
 /* Adjust header and page menu */
 header{
@@ -397,7 +397,7 @@ ul{
     padding: 0;
 }
 }
-@media screen and (min-width:700px) and (max-width: 949px){
+@media screen and (min-width:700px) and (max-width: 999px){
    
     /* Page Header */
     header{
