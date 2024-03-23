@@ -334,11 +334,13 @@ header{
     text-align: left;
     padding: 5px;
     font-size: 24px;
+    color: navy;
     
 }
 .project-ribbon p{
     font-size: 16px;
     padding-right: 10px;
+    color: navy;
 }
 .about .title h1{
     font-size: 34px;
@@ -375,138 +377,106 @@ ul{
 }
 }
 @media screen and (min-width:700px) and (max-width: 949px){
+   
+    /* Page Header */
+        /* Page Header */
     header{
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        background-image: url();
-        margin-bottom: 20px;
+            height: 400px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* margin: 0; */
+            /* padding: 0; */
+            background-image: url();
+            margin-bottom: 20px;
     }
     .top-bar{
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-        height: 300px;
-        justify-content: start;
+            height: 300px;
     }
     .subtitle{
-        left: 0;
-        margin: 0;
-        padding: 0;
-        bottom: 0;
-        height: 100px;
-        width: 100%;
+            left: 0;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
     }
     .subtitle h1{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
     }
-    @keyframes top-ribbon{
-
-        /* 0% { width: 0px;}
-        100%{ width: 350px;} */
-    } 
+    @keyframes top-ribbon{} 
     .animation{
-        display: flex; 
-        width: 150px; 
-        background-color: aquamarine;
-        align-items: center;
-        justify-content: start;
-        color: navy;
-        font-weight: 700;        
+            width: 150px;
     }
     .animation h1{
-        white-space: wrap;
-        text-align: left;
-        padding: 0;
-        padding-left: 10px;
-        
+            white-space: wrap;       
     }
     .menu{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        margin-right: 20px;
+            margin: 0 20px 0 0;
     }
     .menu ul{
-        margin: 0;
-        padding: 0;
-        top: 0;
-        height: 280px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
     }
     .menu li{
-        margin: 10px;
+            margin: 10px;
     }
+        /* Main Page About Section */
     .about{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        height: 250px;
+            height: 250px;
     }
     #about-img{
-        padding: 0;
-        margin: 0;
-        display: none;
+            display: none;
     }
     .about .title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        border: 0;
-        height: 50px;
+            width: 100%;
+            border: 0;
+            height: 50px;
     }
     .about h1{
-        padding: 0;
-        margin: 0;
-        border: 0;
-        text-align: center;
+            margin: 0;
+            text-align: center;
     }
     #about-text{
-        width: 100%;
-        height: 180px;
-        margin: 10px;
+            width: 100%;
+            height: 200px;
+            margin: 10px;
     }
     #about-text p{
-        margin: 0;
-        height: 100%;
+            margin: 0;
+            height: 100%;
     }
     .work{
-        display: flex;
-        margin: 0;
-        flex-direction:column;
+            flex-direction: column;
+            align-items: center;
     }
     .work .title{
-        border: 0;
-        width: 100%;
+            width: 100%;
+            border: 0;
     }
-    .work .title h1{
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        margin-top: 10px;
+    .work h1{
+            text-align: center;
     }
-    .work .work-links{
-        margin: 0;
-        width: 100%;
+    .work-links{
+            width: 100%;
+    }
+    #main-project{
+            height: 400px;
     }
     .project-ribbon{
         margin: 0;
         width: 250px;
+    }
+    .project-ribbon h1{
+        margin: 0;
+        width: 250px;
+        text-align: left;
+        color: navy;
+    }
+    .project-ribbon p{
+        color: navy;
     }
     footer{
         flex-direction: row;
@@ -563,17 +533,10 @@ ul{
         margin-bottom: 20px;
     }
     .top-bar{
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* margin: 0; */
-        /* padding: 0; */
         height: 300px;
-        /* justify-content: center; */
     }
     .subtitle{
         left: 0;
-        /* margin: 0; */
-        /* padding: 0; */
         bottom: 0;
         height: 100px;
         width: 100%;
@@ -584,85 +547,39 @@ ul{
         padding: 0;
         text-align: center;
     }
-    @keyframes top-ribbon{
-
-        /* 0% { width: 0px;}
-        100%{ width: 350px;} */
-    } 
+    @keyframes top-ribbon{} 
     .animation{
-        /* display: flex;  */
-        width: 150px; 
-        /* background-color: aquamarine; */
-        /* align-items: center;
-        justify-content: start; */
-        /* color: navy; */
-        /* font-weight: 700;         */
+        width: 150px;
     }
-    /* .top-bar h1{
-        left: 0;
-    } */
     .animation h1{
-        white-space: wrap;
-        /* text-align: left; */
-        /* padding: 0; */
-        /* padding-left: 10px; */
-        
+        white-space: wrap;       
     }
     .menu{
-        /* width: 200px; */
-        /* display: flex; */
-        /* justify-content: end; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* margin: 0; */
-        /* right: 0; */
-        /* width: 100%; */
-        /* margin-right:  20px; */
         margin: 0 20px 0 0;
     }
     .menu ul{
-        /* margin: 0; */
-        /* padding: 0; */
-        /* top: 0; */
-        /* height: 280px; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* right: 0; */
     }
     .menu li{
         margin: 10px;
     }
     /* Main Page About Section */
     .about{
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* padding: 0; */
-        /* margin: 0; */
-        /* border: 0; */
         height: 250px;
     }
     #about-img{
-        /* padding: 0; */
-        /* margin: 0; */
         display: none;
     }
     .about .title{
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
-        /* padding: 0; */
-        /* margin: 0; */
         width: 100%;
         border: 0;
         height: 50px;
     }
     .about h1{
-        /* padding: 0; */
         margin: 0;
-        /* border: 0; */
         text-align: center;
     }
     #about-text{
@@ -674,34 +591,26 @@ ul{
         margin: 0;
         height: 100%;
     }
+    /* Main Page Work Links */
     .work{
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
     .work .title{
         width: 100%;
         border: 0;
-        /* justify-content: center; */
     }
     .work h1{
-        /* width: 100%; */
         text-align: center;
     }
     .work-links{
         width: 100%;
-        display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
-        padding: 20px;
-        gap: 20px;
     }
     #main-project, #project-1, #project-2, #project-3, #project-4{
         grid-column: 1/ span 2;
     }
     #main-project{
         height: 400px;
-        /* grid-column: 1/ span 2; */
-        /* grid-row: 1; */
     }
     .project-images{
         height: var(--project-height);
@@ -734,10 +643,6 @@ ul{
         text-align: center;
         margin-bottom: 20px;
     }
-    /* #more-details{
-        width: 100%;
-        justify-content: end;
-    } */
     .footer-links{
         justify-content: center;
         align-items: center;
@@ -748,7 +653,6 @@ ul{
         padding: 0;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
         margin-top: 40px;
         margin-bottom: 20px;
     }
@@ -760,8 +664,4 @@ ul{
         margin-bottom: 8px;
         margin-top: 8px;
     }
-    /* #more-details{
-        justify-content: center;
-    } */
-
 }
