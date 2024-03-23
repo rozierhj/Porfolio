@@ -4,15 +4,30 @@
     margin: 0;
     font-size: 16px;
 }
+/* Reset all links to page for unique styling */
+* a:hover, * a:active{
+    text-decoration: none;
+    color: inherit; 
+    background-color: transparent;
+    /* border-bottom: 3px solid; */
+}
+* a, * a:visited{
+    text-decoration: none;
+    color: inherit; 
+    background-color: transparent;
+    /* border-bottom: 3px solid; */
+}
+* li{
+     border-bottom: 3px solid;
+}
 :root{
+    /* height of all project windows except first main one */
     --project-height: 300px; 
+    /* gradience of all project images until the user hovers over them */
     --gradient: 0.5; 
 }
-main{
-    margin: 0;
-    padding: 0;
-}
-/* Header ribbon an menu styles */
+
+/* Page Header */
 header{
     background-image: url(/assets/images/computerString.png);
     background-size: cover;
@@ -23,7 +38,6 @@ header{
     position: relative;
     margin-bottom: 20px;
 }
-/* Header Ribbon */
 header h1{
     width: 350px;
     white-space: nowrap;
@@ -41,7 +55,7 @@ header a, header li{
     background-color: navy;
     align-items: center;
 }
-/* Header navigation bar */
+/* Page Navigation Menu */
 .menu{
     display: flex;
     justify-content: flex-end;
@@ -54,12 +68,17 @@ header a, header li{
     font-weight: bold;
     display: inline;
     color: aquamarine;
-    border-bottom: 3px solid aquamarine;
+    border-bottom-color: aquamarine;
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 5px;
     margin-right: 5px;
 }
+.menu a:hover, .menu a:active, li:hover{
+    color: white;
+    border-bottom-color: white;
+}
+/* decorative box */
 .subtitle{
     display: flex;
     position: absolute;
@@ -76,15 +95,7 @@ header a, header li{
     color: navy;
     font-weight: 700;
 }
-header a, header a:visited {
-    color: inherit; 
-    text-decoration: none;
-    background-color: transparent;
-}
-.menu a:hover, .menu a:active{
-    color: white;
-    border-bottom: 3px solid white;
-}
+/* Side bar ribbon that appears on the left containing designer */
 .animation{
     display: flex; 
     width: 350px; 
@@ -96,9 +107,30 @@ header a, header a:visited {
     color: navy;
     font-weight: 700;
 }
-.class{
-    width: 125px;
+/* Controls the animation of the top ribbon on the header containing designer name */ 
+@keyframes top-ribbon{
+
+    0% { width: 0px;}
+    100%{ width: 350px;}
 }
+
+/* Main Window on Page */
+
+/* Style of the titles for each main window section and the footer */
+.title{
+    width: 15%;
+    text-align: right;
+    border-right: 5px solid navy;
+}
+.title h1{
+    font-size: 38px;
+    font-weight: bolder;
+    color: navy;
+    margin: 10px;
+    text-align: right;
+}
+
+/* First section of main window describing the designer */
 .about{
     display:flex;
     flex-direction: row;
@@ -125,6 +157,8 @@ header a, header a:visited {
     border: 2px solid navy;
     margin: 2px;
 }   
+
+/* Profile image */
 #about-img{
 display: flex;
 justify-content: center;
@@ -141,27 +175,13 @@ align-items: center;
     border: 5px solid navy;
     width: 150px;
 }
-/* Main Body */
 
-/* My Inormation */
-/* My Work */
+/*Second section of main window showcasing links and descriptions to sites designer created with decorative images serving as links */
 .work{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.title{
-    width: 15%;
-    text-align: right;
-    border-right: 5px solid navy;
-}
-.title h1{
-    font-size: 38px;
-    font-weight: bolder;
-    color: navy;
-    margin: 10px;
-    text-align: right;
 }
 .work-links{
     width: 85%;
@@ -184,6 +204,7 @@ align-items: center;
 .projects a:hover, .projects a:active{
     opacity: 100%;
 }
+/* links to websties designer created */
 #main-project{
     height: 600px;
     grid-column: 1/ span 2;
@@ -208,6 +229,7 @@ align-items: center;
     grid-row: 3;
     grid-column: 2;
 }
+/* Decorative ribbon containing overlaid on top of each project image containing a project title and short description */
 .project-ribbon{
     width: 300px;
     height: 120px;
@@ -226,11 +248,7 @@ align-items: center;
     font-size: 18px;
     padding-left: 10px;
 }
-@keyframes top-ribbon{
 
-    0% { width: 0px;}
-    100%{ width: 350px;}
-}
 /* Footer */
 footer{
     margin-top: 50px;
@@ -241,18 +259,14 @@ footer{
     align-items: center;
 
 }
-#more-details{
+
+/* Links leading to external websites linkedin, github, email... */
+.footer-links{
     display: flex;
     height: 100%;
     width: 80%;
     align-items: center;
     justify-content: center;
-}
-.footer-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
 }
 .footer-links li{
     display: inline;
@@ -260,22 +274,22 @@ footer{
     padding-right: 5px;
     margin-left: 10px;
     margin-right: 20px;
+    border-bottom-color:navy;
 }
 .footer-links a{
-    color: inherit; 
-    text-decoration: none;
-    background-color: transparent;
     color: navy;
     font-size: 28px;
     font-weight: 700;
-    border-bottom: 5px solid navy;
 }
-.footer-links a:hover, footer a:active{
+.footer-links a:hover, .footer-links a:active, .footer-links li:hover{
     color: aquamarine;
-    border-bottom: 5px solid aquamarine;
+    border-bottom-color:aquamarine;
 }
+/* Other screen sizes */
+
 @media screen and (min-width:950px) and (max-width: 1200px){
 
+/* Adjust header and page menu */
 header{
     height: 500px;
 }
@@ -289,6 +303,7 @@ header{
     margin-bottom: 20px;
     margin-bottom: 20px;
 }
+/* Adjust section and footer titles */
 .title{
     display: flex;
     align-items: center;
@@ -299,6 +314,15 @@ header{
     text-align: right;
     font-size: 34px;
 }
+/* about section */
+.about .title h1{
+    font-size: 34px;
+    font-weight: bolder;
+    text-align: start;
+    margin: 0px;
+    text-align: right;
+    margin-right: 10px;
+}  
 #about-text{
     height: 100%;
     width: 60%;
@@ -308,8 +332,16 @@ header{
     width: 100%;
     margin-right: 20px;
 }  
+/* profile image */
 #about-img img{
     margin-right: 20px;
+}
+
+/* Projects page */
+.work .title{
+    border: 0;
+    /* font-size: 40px; */
+    width: 100%
 }
 .work h1{
     width: 100%;
@@ -317,7 +349,6 @@ header{
     text-align: center;
     margin: 0;
 }
-/* My Work */
 .work{
     display: flex;
     flex-direction: column;
@@ -325,11 +356,13 @@ header{
     justify-content: center;
     align-items: center;
 } 
+/* Links to external websites created in projects */
 .work-links{
     width: 100%;
     display: grid;
     grid-column: span 2;
 }
+/* Project description ribbons */
 .project-ribbon h1{
     text-align: left;
     padding: 5px;
@@ -342,20 +375,8 @@ header{
     padding-right: 10px;
     color: navy;
 }
-.about .title h1{
-    font-size: 34px;
-    font-weight: bolder;
-    text-align: start;
-    margin: 0px;
-    text-align: right;
-    margin-right: 10px;
-}   
-.work .title{
-    border: 0;
-    /* font-size: 40px; */
-    width: 100%
-}
-#more-details{
+/* page footer with links to external websites about the designer */
+.footer-links{
     width: 100%;
     justify-content:start;
     margin: 0;
@@ -379,7 +400,6 @@ ul{
 @media screen and (min-width:700px) and (max-width: 949px){
    
     /* Page Header */
-        /* Page Header */
     header{
             height: 400px;
             /* display: flex; */
@@ -392,6 +412,7 @@ ul{
     .top-bar{
             height: 300px;
     }
+    /* decorative box turned into header bar */
     .subtitle{
             left: 0;
             bottom: 0;
@@ -404,6 +425,7 @@ ul{
             padding: 0;
             text-align: center;
     }
+    /* turn off animation */
     @keyframes top-ribbon{} 
     .animation{
             width: 150px;
@@ -411,6 +433,7 @@ ul{
     .animation h1{
             white-space: wrap;       
     }
+    /* site menu */
     .menu{
             margin: 0 20px 0 0;
     }
@@ -427,6 +450,7 @@ ul{
     .about{
             height: 250px;
     }
+    /* profile image hidden */
     #about-img{
             display: none;
     }
@@ -448,6 +472,7 @@ ul{
             margin: 0;
             height: 100%;
     }
+    /* project description section */
     .work{
             flex-direction: column;
             align-items: center;
@@ -465,6 +490,7 @@ ul{
     #main-project{
             height: 400px;
     }
+    /* ribbons with title and description of each project */
     .project-ribbon{
         margin: 0;
         width: 250px;
@@ -478,18 +504,27 @@ ul{
     .project-ribbon p{
         color: navy;
     }
+    /* footer section */
     footer{
         flex-direction: row;
         height: 200px;
         justify-content: end;
     }
+    footer .title{
+        width: 50%;
+        border: 0;
+    }
+    footer .title h1{
+        text-align: center;
+        border: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    /* links to external pages about the designer */
     .footer-links{
         display: flex;
         flex-direction: row;
         align-items:end;
-        justify-content: end;
-    }
-    #more-details{
         justify-content: end;
         width: 60%;
         border-left: 5px solid navy;
@@ -501,23 +536,15 @@ ul{
         align-items: end;
         justify-content: end;
         font-size: 100px;
+        margin-right: 10px;
     }
     .footer-links li{
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-    footer .title{
-        width: 50%;
         border: 0;
     }
     .footer-links a{
         border: 0;
-    }
-    footer .title h1{
-        text-align: center;
-        border: 0;
-        margin: 0;
-        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 699px) {
@@ -525,16 +552,13 @@ ul{
     /* Page Header */
     header{
         height: 400px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* margin: 0; */
-        /* padding: 0; */
         background-image: url();
         margin-bottom: 20px;
     }
     .top-bar{
         height: 300px;
     }
+    /* decorative subtitle box turned into page header bar */
     .subtitle{
         left: 0;
         bottom: 0;
@@ -547,6 +571,7 @@ ul{
         padding: 0;
         text-align: center;
     }
+    /* turn off name ribbon animation */
     @keyframes top-ribbon{} 
     .animation{
         width: 150px;
@@ -554,6 +579,7 @@ ul{
     .animation h1{
         white-space: wrap;       
     }
+    /* page section menu */
     .menu{
         margin: 0 20px 0 0;
     }
@@ -591,7 +617,7 @@ ul{
         margin: 0;
         height: 100%;
     }
-    /* Main Page Work Links */
+    /* Main Page project work Links */
     .work{
         flex-direction: column;
         align-items: center;
@@ -606,6 +632,7 @@ ul{
     .work-links{
         width: 100%;
     }
+    /* links to websites designer created */
     #main-project, #project-1, #project-2, #project-3, #project-4{
         grid-column: 1/ span 2;
     }
@@ -643,6 +670,7 @@ ul{
         text-align: center;
         margin-bottom: 20px;
     }
+    /* external links to designer pages ex. github, linked */
     .footer-links{
         justify-content: center;
         align-items: center;
@@ -661,6 +689,7 @@ ul{
         font-size: 18px;
     }
     .footer-links li{
+        border: 0;
         margin-bottom: 8px;
         margin-top: 8px;
     }
