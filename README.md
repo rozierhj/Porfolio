@@ -7,7 +7,7 @@ The HTML page contains links to different sections on the page. It was also a go
 
 ## Usage
 
-Here is a [link to the webpage](https://rozierhj.github.io/Challenge.01-Selectors-Semantic_Elements/#search-engine-optimization)
+Here is a [link to the webpage](https://rozierhj.github.io/Portfolio.hr/#more-details)
 
 
 This is what the web page should like like when this challenge is complete.
