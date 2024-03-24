@@ -29,7 +29,7 @@
 
 /* Page Header */
 header{
-    background-image: url(https://raw.githubusercontent.com/rozierhj/Portfolio.hr/main/assets/images/header.png);
+    background-image: url(/assets/images/header.png);
     background-size: cover;
     background-position: center;
     height: 300px;
