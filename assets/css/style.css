@@ -407,7 +407,7 @@ ul{
             /* flex-direction: column; */
             /* margin: 0; */
             /* padding: 0; */
-            /* background-image: url(); */
+            background-image: url();
             margin-bottom: 20px;
     }
     .top-bar{
@@ -553,7 +553,7 @@ ul{
     /* Page Header */
     header{
         height: 400px;
-        /* background-image: url(); */
+        background-image: url();
         margin-bottom: 20px;
     }
     .top-bar{
