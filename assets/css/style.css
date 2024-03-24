@@ -553,7 +553,7 @@ ul{
     /* Page Header */
     header{
         height: 400px;
-        background-image: url();
+        /* background-image: url(); */
         margin-bottom: 20px;
     }
     .top-bar{
